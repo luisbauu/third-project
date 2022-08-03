@@ -1,3 +1,49 @@
 body{
   margin: 0;
 }
+
+nav{
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  margin-left: 30px;
+}
+
+.left img{
+  height: 35px;
+}
+
+nav h4{
+  font-weight:500;
+  margin-right: 30px;
+}
+
+form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  text-indent: 5px;
+}
+
+form button{
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  grid-column: 1 / -1;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  
+}
+
+main{
+  padding: 36px;
+}
