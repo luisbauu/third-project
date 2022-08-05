@@ -45,5 +45,16 @@ form button{
 }
 
 main{
+
   padding: 36px;
+}
+
+.image--div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  height: auto;
+  width: 400px;
 }
