@@ -1,10 +1,13 @@
 import data from '../assets/data'
+import { useState } from 'react'
 
 export default function Meme(){
-	
+	const [memeImage, setMemeImage] = useState(data.data.memes[Math.floor(Math.random() * 100)].url);
+
 	function handleClick(){
-		console.log(data.data.memes[Math.floor(Math.random() * 100)].url)
+		setMemeImage(data.data.memes[Math.floor(Math.random() * 100)].url)		
 	}
+
 	return(
 		<main>
 			<form>
@@ -12,6 +15,7 @@ export default function Meme(){
 				<input type='text'/>
 				<button onClick={handleClick}>Get a new meme image 🖼</button>
 			</form>
+			<img src={memeImage}/>
 		</main>
 	)
 }
